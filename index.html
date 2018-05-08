@@ -549,22 +549,30 @@
               <td class="body-item mbr-fonts-style display-7">Desconto sobre</td>
               <td class="body-item mbr-fonts-style display-7"></td>
               <td class="body-item mbr-fonts-style display-7">30%</td>
-              <td class="body-item mbr-fonts-style display-7"></td>
+              <td class="body-item mbr-fonts-style display-7">
+                   <input id="valorDesconto" type="text" class="form-control col-md-12 moeda" disabled readonly>
+              </td>
             </tr>
             <tr>
               <td class="head-item mbr-fonts-style display-7">Taxa Admistrativa</th>
                 <td class="body-item mbr-fonts-style display-7"></td>
-                <td class="body-item mbr-fonts-style display-7"></td>
-                <td class="body-item mbr-fonts-style display-7"><input type="text" id="valor1" name="valor1"></td>
+                <td class="body-item mbr-fonts-style display-7">1.5%</td>
+                <td class="body-item mbr-fonts-style display-7"><input id="valorTaxaAdm" type="text" class="form-control col-md-12 moeda" disabled readonly></td>
             </tr>
         
          </tr>
               <th class="head-item mbr-fonts-style display-7">TOTAL</th>
               <td class="body-item mbr-fonts-style display-7"></td>
               <td class="body-item mbr-fonts-style display-7"></td>
-              <td class="body-item mbr-fonts-style display-7"><input type="text" id="valor1" name="valor1"></td>
-              </tr>
-            
+              <td class="body-item mbr-fonts-style display-7"><input id="valorTotal" type="text" class="form-control col-md-12 moeda" disabled readonly></td>
+         </tr>
+           </tr>
+              <th class="head-item mbr-fonts-style display-7">Economia Anual</th>
+              <td class="body-item mbr-fonts-style display-7"></td>
+              <td class="body-item mbr-fonts-style display-7"></td>
+              <td class="body-item mbr-fonts-style display-7"><input id="valorAnual" type="text" class="form-control col-md-12 moeda" disabled readonly></td>
+         </tr>
+            *Valores estimados com base em informações exibidas
         </tbody>
     </table>
         </div>
@@ -714,14 +722,28 @@ $(document).ready(function() {
 $(".moeda").maskMoney();
   
   $("#proposta").focusout(function() {
-taxa = "09.00"; //%
-v1 = $(this).val().replace(",", "");
-v2 = (v1 * taxa) / 100; //valorResto
-soma = (parseFloat(v2) - parseFloat(v1));
+        taxa  = "09.00"; //%
+        taxa2 = "30.00"; //%
+        taxa3 = "1.5";
 
-result = (soma * -1);
+    v1 = $(this).val().replace(",", "");
+    v2 = (v1 * taxa) / 100; 
+    
+    soma = (parseFloat(v2) - parseFloat(v1));
+    result = (soma * -1);
+    v3 = (v2 * taxa2) /100;
+    v4 = (result * taxa3) /100;
+    resultTotal = (result + v3 +v4);
+    v5 = ((resultTotal - v1)*12);
+    valorAnual = (v5 * -1);
+
 $("#valorProposta").val(parseFloat(result).toFixed(2));
 $("#valorResto").val(parseFloat(parseFloat(v2)).toFixed(2));
+$("#valorDesconto").val(parseFloat(parseFloat(v3)).toFixed(2));
+$("#valorTaxaAdm").val(parseFloat(parseFloat(v4)).toFixed(2));
+$("#valorTotal").val(parseFloat(parseFloat(resultTotal)).toFixed(2));
+$("#valorAnual").val(parseFloat(parseFloat(valorAnual)).toFixed(2));
+
 
 	
 
