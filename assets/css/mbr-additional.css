@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i,900,900i);
 
 
 
@@ -20,35 +20,35 @@ body {
   line-height: 1.6;
 }
 .display-1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 4.25rem;
 }
 .display-1 > .mbr-iconfont {
   font-size: 6.8rem;
 }
 .display-2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
 }
 .display-2 > .mbr-iconfont {
   font-size: 4.8rem;
 }
 .display-4 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
 .display-4 > .mbr-iconfont {
   font-size: 1.6rem;
 }
 .display-5 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
 }
 .display-5 > .mbr-iconfont {
   font-size: 2.4rem;
 }
 .display-7 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
 .display-7 > .mbr-iconfont {
@@ -159,14 +159,14 @@ body {
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
-  color: #ffffff !important;
+  color: #ffffff !important; 
   background-color: #0d6786 !important;
   border-color: #0d6786 !important;
 }
 .btn-secondary,
 .btn-secondary:active {
-  background-color: #ce1735 !important;
-  border-color: #ce1735 !important;
+  background-color: #EA4568 !important;
+  border-color: #EA4568 !important;
   color: #ffffff !important;
 }
 .btn-secondary:hover,
@@ -174,8 +174,8 @@ body {
 .btn-secondary.focus,
 .btn-secondary.active {
   color: #ffffff !important;
-  background-color: #e50039 !important;
-  border-color: #e50039 !important;
+  background-color: #EA4568 !important;
+  border-color: #EA4568 !important;
 }
 .btn-secondary.disabled,
 .btn-secondary:disabled {
@@ -610,7 +610,7 @@ a:hover {
   transform: rotate(135deg);
 }
 /* Others*/
-.note-check a[data-value=Rubik] {
+.note-check a[data-value=Montserrat] {
   font-style: normal;
 }
 .mbr-arrow a {
@@ -653,7 +653,7 @@ a:hover {
   background-color: #f5f5f5;
   box-shadow: none;
   color: #565656;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1.43;
   min-height: 3.5em;
@@ -670,10 +670,10 @@ a:hover {
   border-color: red;
 }
 .mbr-overlay {
-  background-color: #000;
+  background-color: #82308A;
   bottom: 0;
   left: 0;
-  opacity: .5;
+  opacity: .3 ;
   position: absolute;
   right: 0;
   top: 0;
@@ -2370,26 +2370,27 @@ body {
 }
 .cid-qRjL0CGWgd .nav-tabs .nav-link {
   box-sizing: border-box;
-  color: #7f1933;
+  color: #fff;
   font-style: normal;
   font-weight: 500;
   border-radius: 3px;
   padding: 1rem 3rem;
   margin: 0.4rem .8rem !important;
   transition: color .3s;
-  border: 2px solid #7f1933;
+  background: #CD3E73;
+  border: 2px solid #C03B77;
 }
 .cid-qRjL0CGWgd .nav-tabs .nav-link:hover {
-  background: #f10d0d;
+  background: #822A8A;
 }
 .cid-qRjL0CGWgd .nav-tabs .nav-link.active {
   color: #ffffff;
   font-style: normal;
-  border: 2px solid #f10d0d;
-  background: #f10d0d;
+  border: 2px solid #EA4568;
+  background: #EA4568;
 }
 .cid-qRjL0CGWgd .nav-tabs .nav-link.active:hover {
-  border: 2px solid #f10d0d;
+  border: 2px solid #EA4568;
 }
 .cid-qQwwdHPAoP {
   background-image: url("../../assets/images/contato-626x417.jpg");
