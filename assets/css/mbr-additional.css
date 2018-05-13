@@ -670,10 +670,10 @@ a:hover {
   border-color: red;
 }
 .mbr-overlay {
-  background-color: #82308A;
+  background-color: #82308A !important;
   bottom: 0;
   left: 0;
-  opacity: .3 ;
+  opacity: 0.3 !important ;
   position: absolute;
   right: 0;
   top: 0;
